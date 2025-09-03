@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border-top: #008bfc solid 2px;
+    background-color: #f4f4f4;
+    font-family: "Lucida Sans Unicode", sans-serif;
+}
+
+#header-top{
+    display: flex;
+    height: 3.2rem;
+    justify-content: center;
+    align-items: center; /*Centrado vertical*/
+    gap: 1rem;
+
+}
+
+#logo-header{
+    height: 40px;
+}
+
+.fragment-header-top{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+    padding-left: 12px;
+    border-left: 2px dotted #aaaaaa;
+}
+
+#name-course-header{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: uppercase;
+    white-space: pre; /*Una sola línea*/
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.icon-header{
+    transform: translateY(2px);
+}
+
+.icon-header-svg{
+    width: 20px;
+    height: 20px;
+}
+
+#user-principal-avatar{
+    width: 30px;
+    border-radius: 50%;
+}
+
+#user-principal-name{
+    font-size: 0.7rem;
+    color: #333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: uppercase;
+    white-space: pre;
+
+}
+
+
+
+#barra-nav{
+    display: flex;
+    height: 2.8rem;
+    gap: 20px;
+    background-color: #004a87;
+    justify-content: center;
+    align-items: center;
+}
+
+#barra-nav a{
+    color: #ffffff;
+    font-size: 0.85rem;
+    text-decoration: none;
+    width: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+}
+
+main{
+    padding: 1rem 12%;
+}
+
+h1{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#search-entrance-container{
+    flex: 1;
+    position: relative;
+}
+
+#search-input{
+    padding: 10px 40px 10px 16px;
+    font-size: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 5%;
+    outline: none;
+}
+
+#search-btn{
+    position: absolute;
+    transform: translateX(-130%);
+    bottom: 15%;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+#icon-search{
+    height: 20px;
+    width: 20px;
+}
+
+#search-option{
+    font-size: 1rem;
+    color: #004a87;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre;
+}
+
+#section-profiles{
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.div-card{
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eeeeee;
+}
+
+/*Animacion al pasar el cursor*/
+.div-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+}
+
+.user-avatar{
+    width: 80px;
+    border-radius: 50%;
+    border: 4px solid #fafafa;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    margin: 0 auto 10px;
+}
+
+.user-name{
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.user-title{
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.user-view-btn, #complete-btn{
+    background: #006ac0;
+    color: #ffffff;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.5s ease;
+    margin-bottom: 15px;
+}
+
+/*Animacion de btn ver | Transicion de color*/
+.user-view-btn:hover{
+    background: #1e5799;
+}
+
+.icon-card-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon-card-svg, .icon-card-svg-Twitter{
+    height: 28px;
+    width: 28px;
+    border-radius: 49%;
+}
+
+.icon-card-svg-Twitter{
+    background: #008cff;
+}
+
+#foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.438);
+    border: 2px solid #dedede;
+}
+
+#complete-btn{
+    margin-left: 12% ;
+    margin-top: 20px;
+}
